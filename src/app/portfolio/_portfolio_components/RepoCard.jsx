@@ -6,11 +6,11 @@ import Link from "next/link"
 
 const RepoCard = ({ repo }) => {
 
-    // const repoTitle = (repo.name)
-    //     .split("-")
-    //     .map(word => word[0].toUpperCase() + word.slice(1))
-    //     .join(" ")
-    const repoTitle = repo.name
+    const repoTitle = (repo.name)
+        .split("-")
+        .map(word => word[0].toUpperCase() + word.slice(1))
+        .join(" ")
+    // const repoTitle = repo.name
     const repoCreatedDate = moment(repo.created_at).format("MMM D, YYYY")
     const isFrontEnd = repo.topics.includes("front-end")
 
