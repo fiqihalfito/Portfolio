@@ -1,11 +1,18 @@
+import { getSkill } from "@/lib/api"
+import RepoCard from "./_portfolio_components/RepoCard"
+import RepoWrapper from "./_portfolio_components/RepoWrapper"
 
 
-const Portfolio = () => {
+const Portfolio = async () => {
+
+    const repos = await getSkill()
 
     return (
-        <div>
-            this is portfolio lobby
-        </div>
+        <RepoWrapper>
+            {repos.map(repo => (
+                <RepoCard key={repo.id} repo={repo} />
+            ))}
+        </RepoWrapper>
     )
 }
 
