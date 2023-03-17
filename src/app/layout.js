@@ -1,4 +1,7 @@
+import NavBar from '@/app/_root_components/NavBar'
 import './globals.css'
+import { poppins } from '@/assets/fonts'
+
 
 export const metadata = {
   title: 'Create Next App',
@@ -8,7 +11,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`bg-black text-white ${poppins.className}`}>
+        <section className='flex flex-col h-screen'>
+          <NavBar />
+          {children}
+        </section>
+      </body>
     </html>
   )
 }
