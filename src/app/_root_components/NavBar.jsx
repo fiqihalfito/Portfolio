@@ -10,7 +10,7 @@ const NavBar = () => {
 
     return (
         <div className="flex items-center">
-            <span className={`${satisfy.className} text-4xl select-none py-8 px-20`}>Portfolio</span>
+            <span className={`${satisfy.className} text-4xl select-none py-8 mr-20`}>Portfolio</span>
             <nav className="grid grid-flow-col font-bold">
                 <Link
                     href={'/'}

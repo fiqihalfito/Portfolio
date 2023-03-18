@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`bg-black text-white ${poppins.className}`}>
+      <body className={`bg-black text-white ${poppins.className} mx-20`}>
         <section className='flex flex-col h-screen'>
           <NavBar />
           {children}
