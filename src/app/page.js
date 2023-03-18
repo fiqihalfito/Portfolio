@@ -15,7 +15,6 @@ export default function Home() {
         priority />
       <p className={`font-bold text-2xl tracking-wide`}>Fiqih Alfito, S.Kom</p>
       <p className={``}>Bachelor of Computer Science</p>
-      <p>Fiqih</p>
 
     </div>
   )
