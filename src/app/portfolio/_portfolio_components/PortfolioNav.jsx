@@ -7,7 +7,7 @@ const PortfolioNav = () => {
     const segment = useSelectedLayoutSegment()
 
     return (
-        <div className='flex justify-center space-x-8 mb-4'>
+        <div className='flex justify-center space-x-8'>
             <Link
                 href={'/portfolio'}
                 className={`${segment === null && 'border-b-2'} py-2 px-2 hover:border-b-2`}>

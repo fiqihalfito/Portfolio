@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function PortfolioLayout({ children }) {
     return (
-        <div className="mx-12">
+        <div className="mx-20">
             <PortfolioNav />
             {children}
         </div>
