@@ -9,7 +9,7 @@ const RepoWrapper = ({ children }) => {
 
     const [viewCols, setViewCols] = useState(2)
 
-    const gridCols = "grid-cols-" + viewCols
+    const gridCols = `grid-cols-${viewCols}`
 
     return (
         <div>
