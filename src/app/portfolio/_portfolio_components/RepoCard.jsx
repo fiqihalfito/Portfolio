@@ -24,11 +24,13 @@ const RepoCard = ({ repo }) => {
                 <div className=" absolute bg-black bg-opacity-70 w-full h-full group-hover/card:flex hidden justify-center items-center space-x-4 ">
                     <Link
                         href={repo.html_url}
+                        target='_blank'
                         className="px-6 py-2 font-bold text-sm bg-amber-500 rounded-full hover:bg-amber-600 active:bg-amber-800">
                         View repo
                     </Link>
                     {isFrontEnd && <Link
                         href={repo.homepage}
+                        target='_blank'
                         className="px-6 py-2 font-bold text-sm bg-cyan-500 rounded-full hover:bg-cyan-600 active:bg-cyan-800">
                         Live demo
                     </Link>}
