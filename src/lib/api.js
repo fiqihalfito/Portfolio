@@ -1,8 +1,8 @@
 
 export const getSkill = async (skill) => {
-    const response = await fetch('https://api.github.com/users/fiqihalfito/repos',
+    const response = await fetch('https://api.github.com/users/fiqihalfito/repos?sort=created',
         {
-            next: { revalidate: 30 },
+            next: { revalidate: 10 },
             // cache: 'reload'
         })
 
