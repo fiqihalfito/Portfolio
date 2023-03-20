@@ -13,6 +13,8 @@ const RepoCardImage = ({ repoId }) => {
                 src={`/images/repo/${repoId}.png`}
                 alt="image here"
                 fill
+                sizes="70vw"
+                // priority
                 onError={() => setImgError(true)}
                 className="object-cover" />
         )
@@ -22,6 +24,8 @@ const RepoCardImage = ({ repoId }) => {
                 src="/images/error/404image.png"
                 alt="image here"
                 fill
+                sizes="70vw"
+                // priority
                 className="object-cover" />
         )
     }
