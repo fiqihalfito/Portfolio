@@ -1,6 +1,6 @@
 import NavBar from '@/app/_root_components/NavBar'
 import './globals.css'
-import { poppins } from '@/assets/fonts'
+import { poppins, inter, satisfy } from '@/assets/fonts'
 
 
 export const metadata = {
@@ -10,8 +10,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`bg-black text-white ${poppins.className} mx-20`}>
+    <html lang="en" className={`${poppins.variable} ${inter.variable} ${satisfy.variable}`}>
+      <body className={`bg-black text-white font-poppins mx-20`}>
         <section className='flex flex-col h-screen'>
           <NavBar />
           {children}

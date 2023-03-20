@@ -2,7 +2,6 @@
 
 import Link from "next/link"
 import { useSelectedLayoutSegment } from "next/navigation"
-import { satisfy } from "@/assets/fonts"
 
 const NavBar = () => {
 
@@ -10,7 +9,7 @@ const NavBar = () => {
 
     return (
         <div className="flex items-center">
-            <span className={`${satisfy.className} text-4xl select-none py-8 mr-20`}>Portfolio</span>
+            <span className={`font-satisfy text-4xl select-none py-8 mr-20`}>Portfolio</span>
             <nav className="grid grid-flow-col font-bold">
                 <Link
                     href={'/'}
