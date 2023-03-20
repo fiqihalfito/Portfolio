@@ -1,4 +1,5 @@
 import PortfolioNav from "./_portfolio_components/PortfolioNav"
+import { PortfolioSettingProvider } from "./_settings"
 
 export const metadata = {
     title: 'Portfolio',
@@ -9,7 +10,9 @@ export default function PortfolioLayout({ children }) {
     return (
         <div>
             <PortfolioNav />
-            {children}
+            <PortfolioSettingProvider>
+                {children}
+            </PortfolioSettingProvider>
         </div>
     )
 }
