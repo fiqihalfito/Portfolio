@@ -16,7 +16,7 @@ const RepoCard = ({ repo }) => {
     const isFrontEnd = repo.topics.includes("front-end")
 
     return (
-        <div className="group/card rounded-lg overflow-hidden">
+        <div className="group/card rounded-lg overflow-hidden flex flex-col">
             <div className="h-52 bg-neutral-800 relative">
 
                 <RepoCardImage repoId={repo.id} />
@@ -37,14 +37,14 @@ const RepoCard = ({ repo }) => {
 
                 </div>
             </div>
-            <div className="bg-neutral-900 p-4 h-full">
+            <div className="bg-neutral-900 p-4 flex-grow flex flex-col">
                 <p className="font-bold text-lg mb-3 " title={repoTitle}>{repoTitle}</p>
-                <div className="flex flex-wrap gap-2 mb-2 -ml-1">
+                <div className="flex flex-wrap gap-2 mb-2 -ml-1 ">
                     {repo.topics.map((topic, i) => (
                         <span key={i} className="border border-cyan-400 text-cyan-100 rounded-full px-2 py-0.5 text-xs font-medium">{topic}</span>
                     ))}
                 </div>
-                <div className="flex justify-between">
+                <div className="flex justify-between items-end flex-grow">
                     <p className="text-xs text-neutral-400">Created at {repoTimeAgo}</p>
                     <p className="text-xs text-neutral-400">{repoCreatedDate}</p>
                 </div>
