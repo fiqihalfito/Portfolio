@@ -12,6 +12,7 @@ const RepoCard = ({ repo }) => {
     //     .join(" ")
     const repoTitle = repo.name
     const repoCreatedDate = moment(repo.created_at).format("MMM D, YYYY")
+    const repoTimeAgo = moment(repo.created_at).fromNow()
     const isFrontEnd = repo.topics.includes("front-end")
 
     return (
@@ -36,9 +37,17 @@ const RepoCard = ({ repo }) => {
 
                 </div>
             </div>
-            <div className="bg-neutral-900 p-10 h-full">
-                <p className="font-bold mb-2 truncate" title={repoTitle}>{repoTitle}</p>
-                <p className="text-xs">Created at {repoCreatedDate}</p>
+            <div className="bg-neutral-900 p-4 h-full">
+                <p className="font-bold text-lg mb-3 " title={repoTitle}>{repoTitle}</p>
+                <div className="flex flex-wrap gap-2 mb-2 -ml-1">
+                    {repo.topics.map((topic, i) => (
+                        <span key={i} className="border border-cyan-400 text-cyan-100 rounded-full px-2 py-0.5 text-xs font-medium">{topic}</span>
+                    ))}
+                </div>
+                <div className="flex justify-between">
+                    <p className="text-xs text-neutral-400">Created at {repoTimeAgo}</p>
+                    <p className="text-xs text-neutral-400">{repoCreatedDate}</p>
+                </div>
             </div>
         </div>
     )
