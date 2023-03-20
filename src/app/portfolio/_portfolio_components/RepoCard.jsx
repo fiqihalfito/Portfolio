@@ -45,7 +45,7 @@ const RepoCard = ({ repo }) => {
                     ))}
                 </div>
                 <div className="flex justify-between items-end flex-grow">
-                    <p className="text-xs text-neutral-400">Created at {repoTimeAgo}</p>
+                    <p className="text-xs text-neutral-400">Created {repoTimeAgo}</p>
                     <p className="text-xs text-neutral-400">{repoCreatedDate}</p>
                 </div>
             </div>
