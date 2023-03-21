@@ -9,12 +9,16 @@ export const getSkill = async (skill) => {
             // cache: 'force-cache'
         })
 
-    const repos = await response.json()
+    let repos = await response.json()
 
     if (!skill) {
-        return repos.filter(repo => repo.topics.length > 0)
+        // all repos
+        repos = repos.filter(repo => repo.topics.length > 0)
+    } else {
+        // repos by topics/skill
+        repos = repos.filter(repo => repo.topics.includes(skill))
     }
 
-    const filtered = repos.filter(repo => repo.topics.includes(skill))
-    return filtered
+    const sortLatestRepos = repos.sort((a, b) => new Date(b.created_at) - new Date(a.created_at))
+    return sortLatestRepos
 }
