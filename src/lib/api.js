@@ -5,7 +5,7 @@ export const getSkill = async (skill) => {
             headers: {
                 'Authorization': `BEARER ${process.env.GITHUB_TOKEN}`
             },
-            next: { revalidate: 0 },
+            next: { revalidate: 30 },
             // cache: 'force-cache'
         })
 
