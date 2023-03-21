@@ -3,9 +3,9 @@ export const getSkill = async (skill) => {
     const response = await fetch('https://api.github.com/users/fiqihalfito/repos',
         {
             headers: {
-                'Authorization': process.env.GITHUB_TOKEN
+                'Authorization': `BEARER ${process.env.GITHUB_TOKEN}`
             },
-            next: { revalidate: 30 },
+            next: { revalidate: 0 },
             // cache: 'force-cache'
         })
 
