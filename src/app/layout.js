@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en" className={`${poppins.variable} ${inter.variable} ${satisfy.variable}`}>
-            <body className={`bg-black text-white font-poppins mx-20`}>
+            <body className={`font-poppins bg-black text-white`}>
                 {children}
             </body>
         </html>

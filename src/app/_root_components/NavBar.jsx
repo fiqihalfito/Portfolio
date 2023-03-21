@@ -4,7 +4,7 @@ import Link from "next/link"
 const NavBar = ({ segment }) => {
 
     return (
-        <div className="flex items-center w-full">
+        <div className="flex items-center w-full custom-container">
             <span className={`font-satisfy text-4xl select-none py-8 mr-20`}>Portfolio</span>
             <nav className="grid grid-flow-col font-bold">
                 <Link

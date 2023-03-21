@@ -9,9 +9,9 @@ export const metadata = {
 
 export default function PortfolioLayout({ children }) {
     return (
-        <div>
+        <div >
             <NavBar segment={'portfolio'} />
-            <div>
+            <div className="custom-container">
                 <PortfolioNav />
                 <PortfolioSettingProvider>
                     {children}

@@ -8,7 +8,7 @@ export default function Home() {
         <div>
 
             {/* section 1 */}
-            <section className='flex flex-col h-screen'>
+            <section className='flex flex-col h-screen '>
 
                 <NavBar segment={'home'} />
 
@@ -28,8 +28,8 @@ export default function Home() {
             </section>
 
             {/* section 2 */}
-            <section>
-                section 2
+            <section className='custom-container bg-white text-black h-96 py-32'>
+                <p>section 2</p>
             </section>
 
             {/* section 3 */}
