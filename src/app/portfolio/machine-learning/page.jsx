@@ -2,6 +2,10 @@ import { getSkill } from "@/lib/api"
 import RepoCard from "../_portfolio_components/RepoCard"
 import RepoWrapper from "../_portfolio_components/RepoWrapper"
 
+export const metadata = {
+    title: 'Portfolio - Machine Learning',
+    description: 'Machine Learning',
+}
 
 const MachineLearning = async () => {
 
