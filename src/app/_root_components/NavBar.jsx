@@ -1,12 +1,7 @@
-"use client"
 
 import Link from "next/link"
-import { useSelectedLayoutSegment } from "next/navigation"
 
 const NavBar = ({ segment }) => {
-
-    // const segment = useSelectedLayoutSegment()
-    // console.log(segment);
 
     return (
         <div className="flex items-center w-full">

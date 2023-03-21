@@ -11,12 +11,12 @@ export default function PortfolioLayout({ children }) {
     return (
         <div>
             <NavBar segment={'portfolio'} />
-            <>
+            <div>
                 <PortfolioNav />
                 <PortfolioSettingProvider>
                     {children}
                 </PortfolioSettingProvider>
-            </>
+            </div>
         </div>
     )
 }
