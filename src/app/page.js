@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import imageProfil from '@/assets/images/profil.jpg'
 import NavBar from './_root_components/NavBar'
+import { education } from '@/lib/education'
+import EducationCard from './_root_components/EducationCard'
 
 
 export default function Home() {
@@ -28,8 +30,13 @@ export default function Home() {
             </section>
 
             {/* section 2 */}
-            <section className='custom-container bg-white text-black h-96 py-32'>
-                <p>section 2</p>
+            <section className='px-40 py-32 bg-white text-black '>
+                <p className='text-6xl font-bold mb-8'>Education</p>
+                <div className='space-y-4'>
+                    {education.map(item => (
+                        <EducationCard edu={item} />
+                    ))}
+                </div>
             </section>
 
             {/* section 3 */}
