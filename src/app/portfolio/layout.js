@@ -1,3 +1,4 @@
+import NavBar from "../_root_components/NavBar"
 import PortfolioNav from "./_portfolio_components/PortfolioNav"
 import { PortfolioSettingProvider } from "./_settings"
 
@@ -9,10 +10,13 @@ export const metadata = {
 export default function PortfolioLayout({ children }) {
     return (
         <div>
-            <PortfolioNav />
-            <PortfolioSettingProvider>
-                {children}
-            </PortfolioSettingProvider>
+            <NavBar segment={'portfolio'} />
+            <>
+                <PortfolioNav />
+                <PortfolioSettingProvider>
+                    {children}
+                </PortfolioSettingProvider>
+            </>
         </div>
     )
 }
