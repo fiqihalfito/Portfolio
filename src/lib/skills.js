@@ -1,27 +1,27 @@
 export const skills = [
     {
         name: "Next.JS 13",
-        value: 80,
-        width: "w-[80%]"
+        value: 90,
+        fullMark: 100
     },
     {
         name: "React JS",
         value: 60,
-        width: "w-[60%]"
+        fullMark: 100
     },
     {
         name: "Laravel",
-        value: 50,
-        width: "w-[50%]"
+        value: 60,
+        fullMark: 100
     },
     {
         name: "MySQL",
-        value: 40,
-        width: "w-[40%]"
+        value: 80,
+        fullMark: 100
     },
     {
-        name: "Tailwind",
+        name: "Tailwind CSS",
         value: 90,
-        width: "w-[90%]"
+        fullMark: 100
     }
 ]

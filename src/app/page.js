@@ -3,8 +3,11 @@ import imageProfil from '@/assets/images/profil.jpg'
 import NavBar from './_root_components/NavBar'
 import { education } from '@/lib/education'
 import EducationCard from './_root_components/EducationCard'
-import { skills } from '@/lib/skills'
-import SkillBar from './_root_components/SkillBar'
+// import SkillChart from './_root_components/SkillChart'
+import { Suspense } from 'react'
+import dynamic from 'next/dynamic'
+
+const SkillChart = dynamic(() => import('./_root_components/SkillChart'))
 
 
 export default function Home() {
@@ -49,12 +52,12 @@ export default function Home() {
 
             {/* section 4 */}
             <section className='px-40 py-32 bg-white text-black'>
-                <p className='text-6xl font-bold mb-8'>Skills</p>
-                <div className='space-y-2'>
-                    {skills.map((skill, i) => (
-                        <SkillBar key={i} skill={skill} />
-                    ))}
+                <p className='text-6xl font-bold mb-4'>Skills</p>
+
+                <div className='h-[80vh]'>
+                    <SkillChart />
                 </div>
+
             </section>
 
         </div>
