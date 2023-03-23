@@ -49,7 +49,7 @@ export default function Home() {
             {/* section 3 */}
             <section className='px-40 py-32 bg-white text-black'>
                 <p className='text-6xl font-bold mb-8'>Licenses & Certifications</p>
-                <div className='grid grid-cols-2 gap-4'>
+                <div className='grid grid-cols-2 gap-8'>
                     {certifications.map((cert, i) => (
                         <CertificationCard cert={cert} />
                     ))}

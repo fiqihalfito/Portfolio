@@ -2,6 +2,7 @@ import Image from "next/image"
 import dicodingImg from "../../../public/images/certification/dicoding.jpg"
 import ibmImg from "../../../public/images/certification/ibm.jpg"
 import freecodecampImg from "../../../public/images/certification/freecodecamp.jpg"
+import digitalentImg from "../../../public/images/certification/digitalent.jpg"
 import moment from "moment"
 import Link from "next/link"
 
@@ -10,7 +11,8 @@ const CertificationCard = ({ cert }) => {
     const mapCertImg = {
         dicoding: dicodingImg,
         ibm: ibmImg,
-        freecodecamp: freecodecampImg
+        freecodecamp: freecodecampImg,
+        digitalent: digitalentImg
     }
 
     const certImg = mapCertImg[cert.orgId]

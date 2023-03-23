@@ -53,10 +53,175 @@ export const certifications = [
             year: 2022
         },
         expirationDate: {
-            month: 10,
+            month: 11,
             year: 2025
         },
         credentialId: "L4PQ66QN7PO1",
         credentialURL: "https://www.dicoding.com/certificates/L4PQ66QN7PO1"
+    },
+    {
+        name: "Belajar Dasar-Dasar DevOps",
+        organization: "Dicoding Indonesia",
+        orgId: "dicoding",
+        issueDate: {
+            month: 10,
+            year: 2022
+        },
+        expirationDate: {
+            month: 10,
+            year: 2025
+        },
+        credentialId: "EYX4976ORPDL",
+        credentialURL: "https://www.dicoding.com/certificates/EYX4976ORPDL"
+    },
+    {
+        name: "Belajar Jaringan Komputer untuk Pemula",
+        organization: "Dicoding Indonesia",
+        orgId: "dicoding",
+        issueDate: {
+            month: 10,
+            year: 2022
+        },
+        expirationDate: {
+            month: 10,
+            year: 2025
+        },
+        credentialId: "JLX1LG5L2X72",
+        credentialURL: "https://www.dicoding.com/certificates/JLX1LG5L2X72"
+    },
+    {
+        name: "Belajar Machine Learning untuk Pemula",
+        organization: "Dicoding Indonesia",
+        orgId: "dicoding",
+        issueDate: {
+            month: 10,
+            year: 2022
+        },
+        expirationDate: {
+            month: 10,
+            year: 2025
+        },
+        credentialId: "MRZMD2EJ3ZYQ",
+        credentialURL: "https://www.dicoding.com/certificates/MRZMD2EJ3ZYQ"
+    },
+    {
+        name: "Belajar Pengembangan Machine Learning",
+        organization: "Dicoding Indonesia",
+        orgId: "dicoding",
+        issueDate: {
+            month: 10,
+            year: 2022
+        },
+        expirationDate: {
+            month: 10,
+            year: 2025
+        },
+        credentialId: "MRZM4505RXYQ",
+        credentialURL: "https://www.dicoding.com/certificates/MRZM4505RXYQ"
+    },
+    {
+        name: "Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)",
+        organization: "Dicoding Indonesia",
+        orgId: "dicoding",
+        issueDate: {
+            month: 10,
+            year: 2022
+        },
+        expirationDate: {
+            month: 10,
+            year: 2025
+        },
+        credentialId: "L4PQ64EN2PO1",
+        credentialURL: "https://www.dicoding.com/certificates/L4PQ64EN2PO1"
+    },
+    {
+        name: "Memulai Pemrograman Dengan Python",
+        organization: "Dicoding Indonesia",
+        orgId: "dicoding",
+        issueDate: {
+            month: 10,
+            year: 2022
+        },
+        expirationDate: {
+            month: 10,
+            year: 2025
+        },
+        credentialId: "EYX424N1WZDL",
+        credentialURL: "https://www.dicoding.com/certificates/EYX424N1WZDL"
+    },
+    {
+        name: "Belajar Dasar Pemrograman JavaScript",
+        organization: "Dicoding Indonesia",
+        orgId: "dicoding",
+        issueDate: {
+            month: 9,
+            year: 2022
+        },
+        expirationDate: {
+            month: 9,
+            year: 2025
+        },
+        credentialId: "0LZ01VDD0P65",
+        credentialURL: "https://www.dicoding.com/certificates/0LZ01VDD0P65"
+    },
+    {
+        name: "Belajar Dasar Pemrograman Web",
+        organization: "Dicoding Indonesia",
+        orgId: "dicoding",
+        issueDate: {
+            month: 9,
+            year: 2022
+        },
+        expirationDate: {
+            month: 9,
+            year: 2025
+        },
+        credentialId: "EYX42W56RZDL",
+        credentialURL: "https://www.dicoding.com/certificates/EYX42W56RZDL"
+    },
+    {
+        name: "Belajar Dasar Visualisasi Data",
+        organization: "Dicoding Indonesia",
+        orgId: "dicoding",
+        issueDate: {
+            month: 9,
+            year: 2022
+        },
+        expirationDate: {
+            month: 9,
+            year: 2025
+        },
+        credentialId: "2VX31GVGVZYQ",
+        credentialURL: "https://www.dicoding.com/certificates/2VX31GVGVZYQ"
+    },
+    {
+        name: "Belajar Membuat Front-End Web untuk Pemula",
+        organization: "Dicoding Indonesia",
+        orgId: "dicoding",
+        issueDate: {
+            month: 9,
+            year: 2022
+        },
+        expirationDate: {
+            month: 9,
+            year: 2025
+        },
+        credentialId: "QLZ9KW15EZ5D",
+        credentialURL: "https://www.dicoding.com/certificates/QLZ9KW15EZ5D"
+    },
+    {
+        name: "Machine Learning Developer",
+        organization: "Digital Talent Scholarship",
+        orgId: "digitalent",
+        issueDate: {
+            month: 9,
+            year: 2022
+        },
+        expirationDate: {
+            month: 9,
+            year: 2025
+        },
+        credentialId: "1494037162101-667",
+        credentialURL: "https://digitalent.dts.sdmdigital.id/cek-sertifikat?registrasi=1494037162101-667"
     },
 ]
