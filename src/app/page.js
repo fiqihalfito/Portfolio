@@ -4,8 +4,10 @@ import NavBar from './_root_components/NavBar'
 import { education } from '@/lib/education'
 import EducationCard from './_root_components/EducationCard'
 // import SkillChart from './_root_components/SkillChart'
-import { Suspense } from 'react'
 import dynamic from 'next/dynamic'
+import SkillAccordion from './_root_components/SkillAccordion'
+import { certifications } from '@/lib/certifications'
+import CertificationCard from './_root_components/CertificationCard'
 
 const SkillChart = dynamic(() => import('./_root_components/SkillChart'))
 
@@ -47,6 +49,11 @@ export default function Home() {
             {/* section 3 */}
             <section className='px-40 py-32 bg-white text-black'>
                 <p className='text-6xl font-bold mb-8'>Licenses & Certifications</p>
+                <div className='grid grid-cols-2 gap-4'>
+                    {certifications.map((cert, i) => (
+                        <CertificationCard cert={cert} />
+                    ))}
+                </div>
 
             </section>
 
@@ -54,9 +61,15 @@ export default function Home() {
             <section className='px-40 py-32 bg-white text-black'>
                 <p className='text-6xl font-bold mb-4'>Skills</p>
 
-                <div className='h-[80vh]'>
-                    <SkillChart />
+                <div className='grid grid-cols-3 '>
+                    <div className='h-[80vh] col-span-2'>
+                        <SkillChart />
+                    </div>
+                    <div className='place-self-center'>
+                        <SkillAccordion />
+                    </div>
                 </div>
+
 
             </section>
 
