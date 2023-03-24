@@ -32,7 +32,7 @@ const SkillAccordion = () => {
 
 
                     <div className={`${tabShow === i ? 'max-h-96 duration-700' : 'max-h-0 duration-300'} overflow-hidden text-justify transition-all ease-in-out `}>
-                        <p className="text-sm pt-2">{skill.desc}</p>
+                        <p className="text-sm pt-2 dark:text-slate-300">{skill.desc}</p>
                     </div>
 
 

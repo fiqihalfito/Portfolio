@@ -3,7 +3,7 @@ function ColumnOne({ isActive }) {
         <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
-            className={`w-8 ${isActive ? 'fill-black stroke-white' : ' fill-white stroke-black'}`}
+            className={`w-8 ${isActive ? 'fill-black stroke-white dark:fill-white dark:stroke-black' : ' fill-white stroke-black dark:fill-black dark:stroke-white'}`}
             transform="rotate(90)"
             viewBox="0 0 24 24"
         >

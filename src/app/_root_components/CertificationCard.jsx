@@ -19,7 +19,7 @@ const CertificationCard = ({ cert }) => {
     const issueDate = moment([cert.issueDate.year, cert.issueDate.month]).format("MMM YYYY")
 
     return (
-        <div className='flex border-2 border-slate-900 rounded-lg overflow-hidden'>
+        <div className='flex border-2 border-slate-900 dark:border-slate-400 rounded-lg overflow-hidden'>
 
             <Image src={certImg} width={160} />
 
@@ -34,7 +34,7 @@ const CertificationCard = ({ cert }) => {
                     <Link
                         href={cert.credentialURL}
                         target="_blank"
-                        className="px-4 py-1 border-2 border-neutral-400 rounded-full text-neutral-400 w-fit text-sm hover:border-amber-400 hover:text-amber-500 hover:bg-amber-50">
+                        className="px-4 py-1 border-2 border-neutral-400 dark:border-amber-200 rounded-full text-neutral-400 dark:text-amber-500 w-fit text-sm hover:border-amber-400 hover:text-amber-500  hover:bg-amber-50">
                         Show credential
                     </Link>
                 </div>

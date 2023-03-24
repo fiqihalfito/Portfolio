@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function PortfolioLayout({ children }) {
     return (
-        <div >
+        <div className="">
             <NavBar segment={'portfolio'} />
             <div className="custom-container">
                 <PortfolioNav />

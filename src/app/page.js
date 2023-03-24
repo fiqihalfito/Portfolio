@@ -13,10 +13,10 @@ import CertificationCard from './_root_components/CertificationCard'
 
 export default function Home() {
     return (
-        <div>
+        <div className=' '>
 
             {/* section 1 */}
-            <section className='flex flex-col h-screen '>
+            <section className='flex flex-col h-screen'>
 
                 <NavBar segment={'home'} />
 
@@ -36,7 +36,7 @@ export default function Home() {
             </section>
 
             {/* section 2 */}
-            <section className='px-40 py-32 bg-amber-50  '>
+            <section className='px-40 py-32 bg-amber-50x  '>
                 <p className='text-6xl font-bold mb-8'>Education</p>
                 <div className='space-y-4'>
                     {education.map((item, i) => (

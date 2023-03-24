@@ -9,17 +9,17 @@ const NavBar = ({ segment }) => {
             <nav className="grid grid-flow-col font-bold">
                 <Link
                     href={'/'}
-                    className={`${segment === 'home' ? 'border-b-2' : ''} border-black py-8 flex justify-center w-32`}>
+                    className={`${segment === 'home' ? 'border-b-2' : ''} border-black dark:border-white py-8 flex justify-center w-32`}>
                     Home
                 </Link>
                 <Link
                     href={'/portfolio'}
-                    className={`${segment === 'portfolio' ? 'border-b-2' : ''} border-black py-8 flex justify-center w-32`}>
+                    className={`${segment === 'portfolio' ? 'border-b-2' : ''} border-black dark:border-white py-8 flex justify-center w-32`}>
                     Portfolio
                 </Link>
                 <Link
                     href={'/'}
-                    className={`${segment === 'about' ? 'border-b-2' : ''} border-black py-8 flex justify-center w-32`}>
+                    className={`${segment === 'about' ? 'border-b-2' : ''} border-black dark:border-white py-8 flex justify-center w-32`}>
                     About
                 </Link>
             </nav>

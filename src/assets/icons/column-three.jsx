@@ -5,7 +5,7 @@ function ColumnThree({ isActive }) {
             // width="800"
             // height="800"
             fill="none"
-            className={`w-8 ${isActive ? 'fill-black stroke-white' : ' fill-white stroke-black'}`}
+            className={`w-8 ${isActive ? 'fill-black stroke-white dark:fill-white dark:stroke-black' : ' fill-white stroke-black dark:fill-black dark:stroke-white'}`}
             viewBox="0 0 24 24"
         >
             <path
