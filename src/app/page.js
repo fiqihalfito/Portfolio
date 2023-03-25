@@ -7,6 +7,11 @@ import SkillChart from './_root_components/SkillChart'
 import SkillAccordion from './_root_components/SkillAccordion'
 import { certifications } from '@/lib/certifications'
 import CertificationCard from './_root_components/CertificationCard'
+import InstagramIcon from '@/assets/icons/instagram'
+import LinkedinIcon from '@/assets/icons/linkedin'
+import GithubIcon from '@/assets/icons/github'
+import Link from 'next/link'
+import SocialMediaLinks from './_root_components/SocialMediaLinks'
 
 // const SkillChart = dynamic(() => import('./_root_components/SkillChart'))
 
@@ -31,6 +36,7 @@ export default function Home() {
                         priority />
                     <p className={`font-bold text-2xl tracking-wide`}>Fiqih Alfito, S.Kom</p>
                     <p className={``}>Bachelor of Computer Science</p>
+                    <SocialMediaLinks />
                 </div>
 
             </section>
