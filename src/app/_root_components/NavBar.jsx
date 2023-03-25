@@ -13,7 +13,7 @@ const NavBar = ({ segment }) => {
                     <Link
                         key={'home'}
                         href={'/'}
-                        className={`border-amber-500 hover:border-2 dark:border-red-500  px-4 py-2 rounded-lg`}>
+                        className={`hover:border-2 px-4 py-2 rounded-lg`}>
                         Home
                     </Link>
                     {segment === 'home' && <div className="border border-black dark:border-white w-full absolute bottom-0 " />}
