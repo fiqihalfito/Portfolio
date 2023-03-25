@@ -20,7 +20,7 @@ const ToggleDarkMode = () => {
 
     return (
         <button
-            className={`p-2 border-4 border-sky-400 bg-sky-900 dark:border-cyan-400 dark:bg-sky-600 hover:bg-sky-800 hover:border-sky-300 rounded-lg`}
+            className={`p-2  border-sky-400 bg-sky-900 hover:border-4 dark:border-cyan-400 dark:bg-sky-600 hover:bg-sky-800 hover:border-sky-300 rounded-lg`}
             onClick={handleClick}>
 
             {theme === 'light' ? <MoonIcon /> : <SunIcon />}
