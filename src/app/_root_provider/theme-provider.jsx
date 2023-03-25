@@ -12,7 +12,7 @@ const ThemeProvider = ({ children }) => {
     return (
         <ThemeContext.Provider value={[theme, setTheme]}>
             <div className={theme}>
-                <div className="dark:bg-slate-900 dark:text-white">
+                <div className="dark:bg-slate-900 dark:text-white min-h-screen">
                     <Main>
                         {children}
                     </Main>
