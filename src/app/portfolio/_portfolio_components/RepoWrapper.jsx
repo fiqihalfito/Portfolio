@@ -44,7 +44,7 @@ const RepoWrapper = ({ children }) => {
                     <ColumnThree isActive={viewLayout === 3} />
                 </button>
             </div>
-            <div className={`grid ${gridCols} gap-12 mb-12`}>
+            <div className={`grid ${gridCols} gap-12 pb-12`}>
                 {children}
             </div>
         </div>
