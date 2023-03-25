@@ -50,7 +50,7 @@ export default function Home() {
                 <p className='text-6xl font-bold mb-8'>Licenses & Certifications</p>
                 <div className='grid grid-cols-2 gap-8'>
                     {certifications.map((cert, i) => (
-                        <CertificationCard cert={cert} />
+                        <CertificationCard key={i} cert={cert} />
                     ))}
                 </div>
 
