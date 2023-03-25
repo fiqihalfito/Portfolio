@@ -1,4 +1,3 @@
-import NavBar from '@/app/_root_components/NavBar'
 import './globals.css'
 import { poppins, inter, satisfy } from '@/assets/fonts'
 import ThemeProvider from './_root_provider/theme-provider'
