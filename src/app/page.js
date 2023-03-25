@@ -36,7 +36,7 @@ export default function Home() {
             </section>
 
             {/* section 2 */}
-            <section className='px-40 py-32 bg-amber-50x  '>
+            <section className='section-padding bg-amber-50x  '>
                 <p className='text-6xl font-bold mb-8'>Education</p>
                 <div className='space-y-4'>
                     {education.map((item, i) => (
@@ -46,7 +46,7 @@ export default function Home() {
             </section>
 
             {/* section 3 */}
-            <section className='px-40 py-32 '>
+            <section className='section-padding '>
                 <p className='text-6xl font-bold mb-8'>Licenses & Certifications</p>
                 <div className='grid grid-cols-2 gap-8'>
                     {certifications.map((cert, i) => (
@@ -57,7 +57,7 @@ export default function Home() {
             </section>
 
             {/* section 4 */}
-            <section className='px-40 py-32 '>
+            <section className='section-padding '>
                 <p className='text-6xl font-bold mb-4'>Skills</p>
 
                 <div className='grid grid-cols-3 '>

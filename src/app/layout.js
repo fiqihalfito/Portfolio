@@ -1,6 +1,7 @@
 import NavBar from '@/app/_root_components/NavBar'
 import './globals.css'
 import { poppins, inter, satisfy } from '@/assets/fonts'
+import ThemeProvider from './_root_provider/theme-provider'
 
 
 export const metadata = {
@@ -10,9 +11,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en" className={`${poppins.variable} ${inter.variable} ${satisfy.variable} dark`}>
-            <body className={`font-poppins dark:bg-black dark:text-white`}>
-                {children}
+        <html lang="en" className={`${poppins.variable} ${inter.variable} ${satisfy.variable} `}>
+            <body className={`font-poppins `}>
+                <ThemeProvider>
+                    {children}
+                </ThemeProvider>
             </body>
         </html>
     )

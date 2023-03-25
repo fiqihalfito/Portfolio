@@ -6,4 +6,8 @@
     .custom-container {
         @apply px-20
     }
+
+    .section-padding {
+        @apply px-40 py-28
+    }
 }
