@@ -5,7 +5,7 @@ import SunIcon from "@/assets/icons/sun"
 import { useContext } from "react"
 import { ThemeContext } from "../_root_provider/theme-provider"
 
-const ToogleDarkMode = () => {
+const ToggleDarkMode = () => {
 
     const [theme, setTheme] = useContext(ThemeContext)
 
@@ -30,4 +30,4 @@ const ToogleDarkMode = () => {
     )
 }
 
-export default ToogleDarkMode
+export default ToggleDarkMode
