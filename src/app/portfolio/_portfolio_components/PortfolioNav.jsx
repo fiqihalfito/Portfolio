@@ -21,7 +21,7 @@ const PortfolioNav = () => {
             <Link
                 href={'/portfolio/front-end'}
                 onFocus={focusSelected}
-                className={`${segment === 'front-end' && 'border-b-2'} border-black dark:border-white p-2 hover:border-b-2 whitespace-nowrap snap-end`}>
+                className={`${segment === 'front-end' && 'border-b-2'} border-black dark:border-white p-2 hover:border-b-2 whitespace-nowrap snap-start`}>
                 Front End
             </Link>
             <Link
