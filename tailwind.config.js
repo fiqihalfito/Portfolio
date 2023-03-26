@@ -13,7 +13,9 @@ module.exports = {
       fontFamily: {
         poppins: ['var(--font-poppins)'],
         inter: ['var(--font-inter)'],
-        satisfy: ['var(--font-satisfy)']
+        satisfy: ['var(--font-satisfy)'],
+        berkshireSwash: ['var(--font-berkshire-swash)'],
+        sofia: ['var(--font-sofia)']
       }
     },
   },

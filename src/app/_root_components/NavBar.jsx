@@ -6,7 +6,7 @@ const NavBar = ({ segment }) => {
 
     return (
         <div className="flex items-stretch justify-between w-full custom-container">
-            <span className={`font-satisfy text-4xl select-none mr-20 py-8`}>Portfolio</span>
+            <span className={`font-sofia text-4xl select-none mr-20 py-8`}>Portfolio</span>
             <div className="flex items-stretch ">
 
                 <div className="relative flex justify-center items-center w-32">
