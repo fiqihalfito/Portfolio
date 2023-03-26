@@ -21,7 +21,7 @@ const CertificationCard = ({ cert }) => {
     return (
         <div className='flex border-2 border-slate-900 dark:border-slate-400 rounded-lg overflow-hidden'>
 
-            <Image src={certImg} width={160} />
+            <Image src={certImg} alt="certification image" width={160} />
 
             <div className=" flex flex-col justify-between w-full py-3 px-5 ">
                 <p className="font-bold text-2xl leading-8">{cert.name}</p>

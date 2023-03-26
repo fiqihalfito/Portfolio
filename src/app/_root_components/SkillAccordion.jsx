@@ -19,7 +19,7 @@ const SkillAccordion = () => {
     return (
         <div className="">
             {skills.map((skill, i) => (
-                <div className="group border-2 border-b-0 last:border-b-2 last:rounded-b-lg first:rounded-t-lg py-4 px-6">
+                <div key={i} className="group border-2 border-b-0 last:border-b-2 last:rounded-b-lg first:rounded-t-lg py-4 px-6">
                     <div className=" flex justify-between items-center ">
                         <p className="font-bold text-xl">{skill.name}</p>
 
