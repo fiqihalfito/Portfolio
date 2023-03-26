@@ -19,22 +19,24 @@ const CertificationCard = ({ cert }) => {
     const issueDate = moment([cert.issueDate.year, cert.issueDate.month]).format("MMM YYYY")
 
     return (
-        <div className='flex border-2 border-slate-900 dark:border-slate-400 rounded-lg overflow-hidden'>
+        <div className='flex items-centerx border-2 border-slate-900 dark:border-slate-400 rounded-lg overflow-hidden'>
 
-            <Image src={certImg} alt="certification image" width={160} />
+            <div className="w-32 md:w-auto">
+                <Image src={certImg} alt="certification image" />
+            </div>
 
-            <div className=" flex flex-col justify-between w-full py-3 px-5 ">
-                <p className="font-bold text-2xl leading-8">{cert.name}</p>
+            <div className=" flex flex-col justify-between w-full py-2 md:py-3 px-3 md:px-5 ">
+                <p className="font-bold text-base md:text-2xl leading-5 md:leading-8">{cert.name}</p>
 
                 <div className="flex justify-between items-center">
                     <div>
-                        <p className="text-sm">{cert.organization}</p>
-                        <p className="text-sm text-slate-400">Issued {issueDate}</p>
+                        <p className="text-xs ">{cert.organization}</p>
+                        <p className="text-xs text-slate-400">Issued {issueDate}</p>
                     </div>
                     <Link
                         href={cert.credentialURL}
                         target="_blank"
-                        className="px-4 py-1 border-2 border-neutral-400 dark:border-amber-200 rounded-full text-neutral-400 dark:text-amber-500 w-fit text-sm hover:border-amber-400 hover:text-amber-500  hover:bg-amber-50">
+                        className=" px-2 md:px-4 py-1 text-xs whitespace-nowrap md:text-sm border-2 border-neutral-400 dark:border-amber-200 rounded-full text-neutral-400 dark:text-amber-500 w-fit  hover:border-amber-400 hover:text-amber-500  hover:bg-amber-50">
                         Show credential
                     </Link>
                 </div>

@@ -42,8 +42,8 @@ export default function Home() {
             </section>
 
             {/* section 2 */}
-            <section className='section-padding bg-amber-50x  '>
-                <p className='text-6xl font-bold mb-8'>Education</p>
+            <section className='md:section-padding mb-20 md:mb-0 bg-amber-50x  '>
+                <p className='text-5xl md:text-6xl font-bold mb-8'>Education</p>
                 <div className='space-y-4'>
                     {education.map((item, i) => (
                         <EducationCard key={i} edu={item} />
@@ -52,9 +52,9 @@ export default function Home() {
             </section>
 
             {/* section 3 */}
-            <section className='section-padding '>
-                <p className='text-6xl font-bold mb-8'>Licenses & Certifications</p>
-                <div className='grid grid-cols-2 gap-8'>
+            <section className='md:section-padding mb-20 md:mb-0'>
+                <p className='text-5xl md:text-6xl font-bold mb-8'>Licenses & Certifications</p>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8'>
                     {certifications.map((cert, i) => (
                         <CertificationCard key={i} cert={cert} />
                     ))}
@@ -63,11 +63,11 @@ export default function Home() {
             </section>
 
             {/* section 4 */}
-            <section className='section-padding '>
-                <p className='text-6xl font-bold mb-4'>Skills</p>
+            <section className='md:section-padding '>
+                <p className='text-5xl md:text-6xl font-bold mb-4'>Skills</p>
 
-                <div className='grid grid-cols-3 '>
-                    <div className='h-[80vh] col-span-2'>
+                <div className='grid grid-cols-1 md:grid-cols-3 '>
+                    <div className='h-60 md:h-[80vh] md:col-span-2 mb-4 md:mb-0'>
                         <SkillChart />
                     </div>
                     <div className='place-self-center'>

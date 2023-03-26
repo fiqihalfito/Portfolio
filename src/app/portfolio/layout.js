@@ -11,7 +11,7 @@ export default function PortfolioLayout({ children }) {
     return (
         <div className="">
             <NavBar segment={'portfolio'} />
-            <div className="custom-container">
+            <div className="md:custom-container">
                 <PortfolioNav />
                 <PortfolioSettingProvider>
                     {children}

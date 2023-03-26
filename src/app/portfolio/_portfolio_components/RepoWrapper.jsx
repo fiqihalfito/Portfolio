@@ -15,16 +15,16 @@ const RepoWrapper = ({ children }) => {
     // const [viewLayout, setViewLayout] = useState(2)
 
     const mapGridCol = {
-        1: 'grid-cols-1',
-        2: 'grid-cols-2',
-        3: 'grid-cols-3',
+        1: 'md:grid-cols-1',
+        2: 'md:grid-cols-2',
+        3: 'md:grid-cols-3',
     }
 
     const gridCols = mapGridCol[viewLayout]
 
     return (
         <div>
-            <div className="flex my-4 divide-x-2">
+            <div className="hidden md:flex my-4 divide-x-2">
                 <button
                     key={1}
                     className={`p-1 rounded-l `}
@@ -44,7 +44,7 @@ const RepoWrapper = ({ children }) => {
                     <ColumnThree isActive={viewLayout === 3} />
                 </button>
             </div>
-            <div className={`grid ${gridCols} gap-12 pb-12`}>
+            <div className={`grid grid-cols-1 ${gridCols} gap-4 md:gap-12 pb-12 mt-4 md:mt-0`}>
                 {children}
             </div>
         </div>

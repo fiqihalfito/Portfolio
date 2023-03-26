@@ -17,13 +17,13 @@ const EducationCard = ({ edu }) => {
         //         <p className="text-sm">{edu.graduationYear}</p>
         //     </div>
         // </div>
-        <div className="px-8 py-4 border-4 border-amber-400 bg-amber-200 rounded-lg grid grid-cols-2">
+        <div className=" px-4 md:px-8 py-2 md:py-4 border-4 border-amber-400 bg-amber-200 rounded-lg grid md:grid-cols-2 gap-y-2">
             <div>
-                <p className="text-6xl font-bold text-amber-500">{edu.graduationYear}</p>
+                <p className="text-5xl md:text-6xl font-bold text-amber-500">{edu.graduationYear}</p>
             </div>
             <div>
-                <p className="text-3xl font-bold text-black">{edu.schoolInd}</p>
-                <p className="text-slate-800 font-medium">{edu.schoolEng}</p>
+                <p className="text-2xl md:text-3xl font-bold text-black">{edu.schoolInd}</p>
+                <p className="text-slate-800 text-sm md:text-base font-medium">{edu.schoolEng}</p>
             </div>
         </div>
 

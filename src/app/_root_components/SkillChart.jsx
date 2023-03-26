@@ -10,6 +10,7 @@ function customTick({ payload, x, y, cx, cy, ...rest }) {
             // verticalAnchor="middle"
             y={y}
             x={x}
+            className="text-sm "
         >
             {payload.value}
         </Text>
@@ -19,9 +20,9 @@ function customTick({ payload, x, y, cx, cy, ...rest }) {
 const SkillChart = () => {
     return (
         <ResponsiveContainer width="100%" height="100%" >
-            <RadarChart cx="50%" cy="50%" outerRadius="90%" data={skills} innerRadius="4%" >
+            <RadarChart cx="50%" cy="50%" outerRadius="80%" data={skills} innerRadius="4%" >
                 <PolarGrid gridType='circle' />
-                <PolarAngleAxis dataKey="name" />
+                <PolarAngleAxis dataKey="name" tick={customTick} />
                 <PolarRadiusAxis angle={55} domain={[0, 100]} />
                 <Radar name="Fiqih" dataKey="value" stroke="#b45309" fill="#fbbf24" fillOpacity={0.6} />
             </RadarChart>

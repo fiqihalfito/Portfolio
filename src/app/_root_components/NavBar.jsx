@@ -1,13 +1,16 @@
+import MenuIcon from "@/assets/icons/menu"
 import MoonIcon from "@/assets/icons/moon"
 import Link from "next/link"
+import SidebarMobile from "./SidebarMobile"
 import ToggleDarkMode from "./ToggleDarkMode"
 
 const NavBar = ({ segment }) => {
 
     return (
-        <div className="flex items-stretch justify-between w-full custom-container">
+        <div className="flex items-stretch justify-between w-full md:custom-container">
             <span className={`font-sofia text-4xl select-none mr-20 py-8`}>Portfolio</span>
-            <div className="flex items-stretch ">
+
+            <div className="hidden md:flex items-stretch ">
 
                 <div className="relative flex justify-center items-center w-32">
                     <Link
@@ -39,12 +42,14 @@ const NavBar = ({ segment }) => {
                     {segment === 'about' && <div className="border border-black dark:border-white w-full absolute bottom-0 " />}
                 </div>
 
-
-
                 <div className="flex justify-center items-center w-32 ">
                     <ToggleDarkMode />
                 </div>
             </div>
+
+            {/* for mobile */}
+            <SidebarMobile segment={segment} />
+
         </div>
     )
 }
