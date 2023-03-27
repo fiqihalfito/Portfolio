@@ -5,9 +5,11 @@ export const getSkill = async (skill) => {
             headers: {
                 'Authorization': `BEARER ${process.env.GITHUB_TOKEN}`
             },
-            next: { revalidate: 30 },
-            // cache: 'force-cache'
+            // next: { revalidate: 0 },
+            cache: 'no-store'
         })
+
+    console.log(response.headers);
 
     let repos = await response.json()
 

@@ -7,7 +7,7 @@ export const metadata = {
     description: 'Repositories',
 }
 
-export default async function PortfolioLayout({ children }) {
+export default function PortfolioLayout({ children }) {
 
     return (
         <div className="">
