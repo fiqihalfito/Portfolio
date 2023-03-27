@@ -7,7 +7,8 @@ export const metadata = {
     description: 'Repositories',
 }
 
-export default function PortfolioLayout({ children }) {
+export default async function PortfolioLayout({ children }) {
+
     return (
         <div className="">
             <NavBar segment={'portfolio'} />
