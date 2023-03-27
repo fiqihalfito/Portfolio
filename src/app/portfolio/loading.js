@@ -3,7 +3,7 @@
 export default function Loading() {
     // You can add any UI inside Loading, including a Skeleton.
     return (
-        <div className="grid grid-cols-3 gap-12 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mt-8">
             {Array.from({ length: 9 }).map((el, i) => (
                 <div key={i} className="rounded-lg overflow-hidden">
                     <div className="h-52 bg-neutral-800">
