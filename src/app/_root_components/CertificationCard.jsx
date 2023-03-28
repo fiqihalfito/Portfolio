@@ -27,11 +27,11 @@ const CertificationCard = ({ cert }) => {
 
             initial={{
                 opacity: 0,
-                left: -100
+                x: -100
             }}
             whileInView={{
                 opacity: 1,
-                left: 0
+                x: 0
             }}
             transition={{
                 delay: 0.2

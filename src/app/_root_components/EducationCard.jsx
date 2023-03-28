@@ -24,11 +24,11 @@ const EducationCard = ({ edu }) => {
             className=" px-4 md:px-8 py-2 md:py-4 border-4 border-amber-400 bg-amber-200 rounded-lg grid md:grid-cols-2 gap-y-2 relative"
             initial={{
                 opacity: 0,
-                left: -100
+                x: -100
             }}
             whileInView={{
                 opacity: 1,
-                left: 0
+                x: 0
             }}
             transition={{
                 delay: 0.2
