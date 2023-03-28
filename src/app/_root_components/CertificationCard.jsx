@@ -23,18 +23,19 @@ const CertificationCard = ({ cert }) => {
 
     return (
         <motion.div
+            className='flex border-2 border-slate-900 dark:border-slate-400 rounded-lg overflow-hidden relative'
+
             initial={{
                 opacity: 0,
-                x: -100
+                left: -100
             }}
             whileInView={{
                 opacity: 1,
-                x: 0
+                left: 0
             }}
             transition={{
                 delay: 0.2
             }}
-            className='flex items-centerx border-2 border-slate-900 dark:border-slate-400 rounded-lg overflow-hidden'
         >
 
             <div className="w-32 md:w-auto">
