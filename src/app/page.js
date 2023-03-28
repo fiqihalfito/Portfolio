@@ -58,7 +58,7 @@ export default function Home() {
             </section>
 
             {/* section 4 */}
-            <section className='md:section-padding mb-20 md:mb-0'>
+            <section className='md:section-padding pb-20 md:pb-0'>
                 <p className='text-5xl md:text-6xl font-bold mb-4'>Skills</p>
 
                 <div className='grid grid-cols-1 md:grid-cols-3 '>
