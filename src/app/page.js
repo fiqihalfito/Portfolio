@@ -7,13 +7,8 @@ import SkillChart from './_root_components/SkillChart'
 import SkillAccordion from './_root_components/SkillAccordion'
 import { certifications } from '@/lib/certifications'
 import CertificationCard from './_root_components/CertificationCard'
-import InstagramIcon from '@/assets/icons/instagram'
-import LinkedinIcon from '@/assets/icons/linkedin'
-import GithubIcon from '@/assets/icons/github'
-import Link from 'next/link'
 import SocialMediaLinks from './_root_components/SocialMediaLinks'
 
-// const SkillChart = dynamic(() => import('./_root_components/SkillChart'))
 
 
 export default function Home() {
@@ -30,7 +25,7 @@ export default function Home() {
                         src={imageProfil}
                         alt="profil"
                         // width={250}
-                        quality={100}
+                        // quality={100}
                         placeholder="blur"
                         className="h-12x w-60 rounded-full mb-6"
                         priority />
