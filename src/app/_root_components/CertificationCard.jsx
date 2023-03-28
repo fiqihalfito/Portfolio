@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import dicodingImg from "../../../public/images/certification/dicoding.jpg"
 import ibmImg from "../../../public/images/certification/ibm.jpg"
@@ -5,6 +7,7 @@ import freecodecampImg from "../../../public/images/certification/freecodecamp.j
 import digitalentImg from "../../../public/images/certification/digitalent.jpg"
 import moment from "moment"
 import Link from "next/link"
+import { motion } from "framer-motion"
 
 const CertificationCard = ({ cert }) => {
 
@@ -19,7 +22,20 @@ const CertificationCard = ({ cert }) => {
     const issueDate = moment([cert.issueDate.year, cert.issueDate.month]).format("MMM YYYY")
 
     return (
-        <div className='flex items-centerx border-2 border-slate-900 dark:border-slate-400 rounded-lg overflow-hidden'>
+        <motion.div
+            initial={{
+                opacity: 0,
+                x: -100
+            }}
+            whileInView={{
+                opacity: 1,
+                x: 0
+            }}
+            transition={{
+                delay: 0.2
+            }}
+            className='flex items-centerx border-2 border-slate-900 dark:border-slate-400 rounded-lg overflow-hidden'
+        >
 
             <div className="w-32 md:w-auto">
                 <Image src={certImg} alt="certification image" />
@@ -42,7 +58,7 @@ const CertificationCard = ({ cert }) => {
                 </div>
 
             </div>
-        </div>
+        </motion.div>
     )
 }
 
