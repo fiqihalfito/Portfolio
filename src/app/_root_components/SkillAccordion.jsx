@@ -2,6 +2,7 @@
 
 import { skills } from "@/lib/skills"
 import { useState } from "react"
+import { motion } from "framer-motion"
 
 const SkillAccordion = () => {
 
@@ -19,7 +20,22 @@ const SkillAccordion = () => {
     return (
         <div className="">
             {skills.map((skill, i) => (
-                <div key={i} className="group border-2 border-b-0 last:border-b-2 last:rounded-b-lg first:rounded-t-lg py-4 px-6">
+                <motion.div
+                    key={i}
+
+                    initial={{
+                        opacity: 0,
+                        x: -100
+                    }}
+                    whileInView={{
+                        opacity: 1,
+                        x: 0
+                    }}
+                    transition={{
+                        delay: 0.2
+                    }}
+
+                    className="group border-2 border-b-0 last:border-b-2 last:rounded-b-lg first:rounded-t-lg py-4 px-6">
                     <div className=" flex justify-between items-center ">
                         <p className="font-bold text-xl">{skill.name}</p>
 
@@ -36,7 +52,7 @@ const SkillAccordion = () => {
                     </div>
 
 
-                </div>
+                </motion.div>
             ))}
 
         </div>
