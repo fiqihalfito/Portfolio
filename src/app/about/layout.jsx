@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function AboutLayout({ children }) {
     return (
-        <div>
+        <div className="">
             <NavBar segment={'about'} />
             {children}
         </div>
