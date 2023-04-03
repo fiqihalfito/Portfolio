@@ -3,7 +3,7 @@
 import { useState } from "react"
 
 export const repoWrapperSetting = () => {
-    const [viewLayout, setViewLayout] = useState(2)
+    const [viewLayout, setViewLayout] = useState(3)
     return [viewLayout, setViewLayout]
 }
 
