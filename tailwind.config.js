@@ -15,7 +15,8 @@ module.exports = {
         inter: ['var(--font-inter)'],
         satisfy: ['var(--font-satisfy)'],
         berkshireSwash: ['var(--font-berkshire-swash)'],
-        sofia: ['var(--font-sofia)']
+        sofia: ['var(--font-sofia)'],
+        rancho: ['var(--font-rancho)']
       }
     },
   },

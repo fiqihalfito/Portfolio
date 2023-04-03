@@ -1,4 +1,4 @@
-import { Poppins, Inter, Satisfy, Berkshire_Swash, Sofia } from "next/font/google";
+import { Poppins, Inter, Satisfy, Berkshire_Swash, Sofia, Rancho } from "next/font/google";
 
 export const poppins = Poppins({
     subsets: ['latin'],
@@ -31,5 +31,11 @@ export const sofia = Sofia({
     weight: "400",
     subsets: ["latin"],
     variable: "--font-sofia"
+})
+
+export const rancho = Rancho({
+    weight: "400",
+    subsets: ["latin"],
+    variable: "--font-rancho"
 })
 
