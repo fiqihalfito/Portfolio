@@ -13,6 +13,12 @@ const PortfolioNav = () => {
     return (
         <div className='flex justify-start md:justify-center gap-x-8 overflow-x-auto snap-mandatory snap-x '>
             <Link
+                href={'/portfolio/pinned'}
+                onFocus={focusSelected}
+                className={`${segment === 'pinned' && 'border-b-2'} border-black dark:border-white p-2 hover:border-b-2 whitespace-nowrap  snap-start`}>
+                Pinned
+            </Link>
+            <Link
                 href={'/portfolio'}
                 onFocus={focusSelected}
                 className={`${segment === null && 'border-b-2'} border-black dark:border-white p-2 hover:border-b-2 whitespace-nowrap  snap-start`}>
