@@ -2,6 +2,7 @@
 
 import { createContext, useContext, useState } from "react"
 import Main from "../_main/Main"
+import Footer from "../_root_components/Footer"
 
 export const ThemeContext = createContext()
 
@@ -17,6 +18,7 @@ const ThemeProvider = ({ children }) => {
                         {children}
                     </Main>
                 </div>
+                <Footer />
             </div>
         </ThemeContext.Provider>
     )
