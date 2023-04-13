@@ -22,6 +22,10 @@ const About = () => {
 
                 If you're interested in working with me or have a project you'd like to discuss, please don't hesitate to get in touch. You can email me at <Link href={'mailto: fiqihalfito.dev@gmail.com'} className="font-bold underline text-blue-700 underline-offset-2">fiqihalfito.dev@gmail.com</Link>
                 , or connect with me on <Link href={'https://www.linkedin.com/in/fiqih-alfito'} target="_blank" className="font-bold text-blue-700">LinkedIn</Link>. I'm excited to explore new opportunities and continue building my career in the tech industry!
+                <br />
+                <br />
+
+                Thank you!
             </p>
         </div>
     )
