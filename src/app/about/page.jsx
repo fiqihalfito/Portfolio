@@ -2,9 +2,9 @@ import Link from "next/link"
 
 const About = () => {
     return (
-        <div className="md:custom-container pb-16 pt-4">
+        <div className="pb-16 pt-4 md:w-1/2 md:mx-auto">
             <p className="text-4xl md:text-5xl mb-4 font-rancho">About</p>
-            <p className="whitespace-pre-line text-justify md:w-1/2">
+            <p className="whitespace-pre-line text-justify ">
                 Hello, my name is Fiqih Alfito, and I recently graduated from Sriwijaya University with a Bachelor's degree in Computer Science. I'm a full-stack developer with a focus on front-end development, and I'm excited to embark on a career in the tech industry.
                 <br />
                 <br />
