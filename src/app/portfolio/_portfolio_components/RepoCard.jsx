@@ -38,7 +38,7 @@ const RepoCard = ({ repo }) => {
                 </div>
             </div>
             <div className="dark:bg-slate-800 p-4 flex-grow flex flex-col ">
-                {/* <p className="font-bold text-lg mb-3 " title={repo.id}>{repo.id}</p> */}
+                <p className="font-bold text-lg mb-3 " title={repo.id}>{repo.id}</p>
                 <p className="font-bold text-lg mb-3 " title={repoTitle}>{repoTitle}</p>
                 <div className="flex flex-wrap gap-2 mb-2 -ml-1 ">
                     {repo.topics.map((topic, i) => (
