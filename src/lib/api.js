@@ -9,6 +9,7 @@ export const getSkill = async (skill) => {
             cache: 'no-store'
         })
 
+    // console.log(response);
 
     let repos = await response.json()
 
