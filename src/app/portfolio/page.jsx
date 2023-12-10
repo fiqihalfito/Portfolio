@@ -1,19 +1,19 @@
-import { getSkill } from "@/lib/api"
-import RepoCard from "./_portfolio_components/RepoCard"
-import RepoWrapper from "./_portfolio_components/RepoWrapper"
+import { getSkill } from "@/lib/api";
+import RepoCard from "./_portfolio_components/RepoCard";
+import RepoWrapper from "./_portfolio_components/RepoWrapper";
 
+export const dynamic = "force-dynamic";
 
 const Portfolio = async () => {
-
-    const repos = await getSkill()
+    const repos = await getSkill();
 
     return (
         <RepoWrapper>
-            {repos.map(repo => (
+            {repos.map((repo) => (
                 <RepoCard key={repo.id} repo={repo} />
             ))}
         </RepoWrapper>
-    )
-}
+    );
+};
 
-export default Portfolio
+export default Portfolio;
