@@ -10,7 +10,7 @@ export const getSkill = async (skill) => {
         }
     );
 
-    // console.log(response);
+    // console.log(response);x
 
     let repos = await response.json();
 
